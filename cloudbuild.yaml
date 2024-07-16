@@ -5,7 +5,7 @@ steps:
   args: ['push', 'gcr.io/${PROJECT_ID}/laravel-app']
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: 'gcloud'
-  args: ['run', 'deploy', 'laravel-app', '--image', 'gcr.io/${PROJECT_ID}/laravel-app', '--platform', 'managed', '--region', 'asia-northeast1', '--allow-unauthenticated']
+  args: ['run', 'deploy', 'laravel-app', '--image', 'gcr.io/${PROJECT_ID}/laravel-app', '--platform', 'managed', '--region', 'global', '--allow-unauthenticated']
 images:
 - 'gcr.io/${PROJECT_ID}/laravel-app'
 options:
