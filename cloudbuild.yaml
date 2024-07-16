@@ -8,3 +8,5 @@ steps:
   args: ['run', 'deploy', 'laravel-app', '--image', 'gcr.io/${PROJECT_ID}/laravel-app', '--platform', 'managed', '--region', 'asia-northeast1', '--allow-unauthenticated']
 images:
 - 'gcr.io/${PROJECT_ID}/laravel-app'
+options:
+  logging: CLOUD_LOGGING_ONLY
